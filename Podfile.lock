@@ -15,7 +15,7 @@ SPEC REPOS:
     - Rollbar
 
 SPEC CHECKSUMS:
-  FlowplayerCore: 24ca0190eed71126d57bc44ad7337026cbf0d816
+  FlowplayerCore: 198fdc589f114a9e75b60e2d5d8c9fdb7b5333ae
   GoogleAds-IMA-iOS-SDK: 005e7670c266ee28ad72d730309f396ad7f440a0
   Rollbar: 93d58a583380b7e724785ff9fa6cb56a48a1b8ac
 
