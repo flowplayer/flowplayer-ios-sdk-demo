@@ -15,6 +15,7 @@
 		4F5869A5231BAE01000885CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A3231BAE01000885CA /* Main.storyboard */; };
 		4F5869A7231BAE03000885CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A6231BAE03000885CA /* Assets.xcassets */; };
 		4F5869AA231BAE03000885CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A8231BAE03000885CA /* LaunchScreen.storyboard */; };
+		F1623F70A9A798EF8315252C /* Pods_flowplayer_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3914C0B8C0FD453709080C0 /* Pods_flowplayer_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		4F5869A6231BAE03000885CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5869A9231BAE03000885CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F5869AB231BAE03000885CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3914C0B8C0FD453709080C0 /* Pods_flowplayer_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowplayer_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDC331AC8D52A061B74D7B8 /* Pods-flowplayer-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.debug.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E523FE453F4DF614D7550658 /* Pods-flowplayer-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.release.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1623F70A9A798EF8315252C /* Pods_flowplayer_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 				4F58699E231BAE01000885CA /* flowplayer-demo */,
 				4F58699D231BAE01000885CA /* Products */,
 				4F5869B1231BAFC3000885CA /* Frameworks */,
+				5BB8E0CBD0E24EF9027D09AD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +83,19 @@
 		4F5869B1231BAFC3000885CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3914C0B8C0FD453709080C0 /* Pods_flowplayer_demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB8E0CBD0E24EF9027D09AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCDC331AC8D52A061B74D7B8 /* Pods-flowplayer-demo.debug.xcconfig */,
+				E523FE453F4DF614D7550658 /* Pods-flowplayer-demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F5869AE231BAE03000885CA /* Build configuration list for PBXNativeTarget "flowplayer-demo" */;
 			buildPhases = (
+				D7EF8105364DE522E30C5F9B /* [CP] Check Pods Manifest.lock */,
 				4F586998231BAE01000885CA /* Sources */,
 				4F586999231BAE01000885CA /* Frameworks */,
 				4F58699A231BAE01000885CA /* Resources */,
+				3F3162316766C629E7C29AFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F3162316766C629E7C29AFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7EF8105364DE522E30C5F9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flowplayer-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F586998231BAE01000885CA /* Sources */ = {
@@ -300,6 +361,7 @@
 		};
 		4F5869AF231BAE03000885CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDC331AC8D52A061B74D7B8 /* Pods-flowplayer-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +385,7 @@
 		};
 		4F5869B0231BAE03000885CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E523FE453F4DF614D7550658 /* Pods-flowplayer-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
