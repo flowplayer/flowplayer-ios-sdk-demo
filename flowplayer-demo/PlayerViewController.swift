@@ -9,7 +9,7 @@
 import UIKit
 import FlowplayerCore
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController, FPFlowplayerDelegate {
     @IBOutlet weak var containerView: UIView!
     
     var flowplayerMedia: FPFlowplayerMedia?
@@ -20,11 +20,78 @@ class PlayerViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         containerView.addSubview(flowplayerViewController.view)
         
+        // Add the delegate after the flowplayerViewController has been added to the container.
+        flowplayerViewController.addPlayerDelegate(self)
+        
         if let flowplayerMedia = flowplayerMedia {
-            flowplayerViewController.prepare(media: flowplayerMedia, autoStart: true)
+            flowplayerViewController.prepare(flowplayerMedia: flowplayerMedia, autoStart: true)
         } else if let externalMedia = externalMedia {
-            flowplayerViewController.prepare(media: externalMedia, autoStart: true)
+            flowplayerViewController.prepare(externalMedia: externalMedia, autoStart: true)
         }
+    }
+    
+    func onIdle(event: FPIdleEvent) {
+        print("OnIdle")
+    }
+    
+    func onPlay(event: FPPlayEvent) {
+        print("OnPlay")
+    }
+    
+    func onPause(event: FPPauseEvent) {
+        print("OnPause")
+    }
+    
+    func onBuffer(event: FPBufferEvent) {
+        print("OnBuffer")
+    }
+    
+    func onComplete(event: FPCompleteEvent) {
+        print("OnComplete")
+    }
+    
+    func onFullscreen(event: FPFullscreenEvent) {
+        print("OnFullscreen")
+    }
+    
+    func onError(event: FPErrorEvent) {
+        print("OnError")
+    }
+    
+    func onAdBreakStart(event: FPAdBreakStartEvent) {
+        print("OnAdBreakStart")
+    }
+    
+    func onAdBreakComplete(event: FPAdBreakCompleteEvent) {
+        print("OnAdBreakComplete")
+    }
+    
+    func onAdStart(event: FPAdStartEvent) {
+        print("OnAdStart")
+    }
+    
+    func onAdPause(event: FPAdPauseEvent) {
+        print("OnAdPause")
+    }
+    
+    func onAdResume(event: FPAdResumeEvent) {
+        print("OnAdResume")
+    }
+    
+    func onAdClick(event: FPAdClickEvent) {
+        print("OnAdClick")
+    }
+    
+    func onAdSkip(event: FPAdSkipEvent) {
+        print("OnAdSkip")
+    }
+    
+    func onAdComplete(event: FPAdCompleteEvent) {
+        print("OnAdComplete")
+    }
+    
+    func onAdError(event: FPAdErrorEvent) {
+        print("OnAdError")
     }
 }
 

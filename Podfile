@@ -6,7 +6,7 @@ target 'flowplayer-demo' do
   use_frameworks!
 
   # Pods for flowplayer-demo
-  pod 'FlowplayerCore', '~> 1.0.0'
+  pod 'FlowplayerCore', '~> 1.1.0'
   pod 'Rollbar', '~> 1.8.1'
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.9'
 end
