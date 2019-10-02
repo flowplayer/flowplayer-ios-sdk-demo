@@ -22,7 +22,5 @@
 #define DEMO_URL_AD_POSTROLL @"https://pubads.g.doubleclick.net/gampad/ads?slotname=/124319096/external/ad_rule_samples&sz=640x480&ciu_szs=300x250&unviewed_position_start=1&output=xml_vast3&impl=s&env=vp&gdfp_req=1&ad_rule=0&vad_type=linear&vpos=postroll&pod=3&ppos=1&lip=true&min_ad_duration=0&max_ad_duration=30000&vrid=6376&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&url=&video_doc_id=short_onecue&cmsid=496&kfa=0&tfcd=0"
 
 @interface MainViewController : UITableViewController
-//@property (nonatomic, weak) IBOutlet UIView *containerView;
-
 
 @end
