@@ -5,8 +5,8 @@ use_frameworks!
 
 workspace 'flowplayer-demo'
 
-xcodeproj 'flowplayer-demo.xcodeproj'
-xcodeproj 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
+project 'flowplayer-demo.xcodeproj'
+project 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
 
 def common_pods
   pod 'FlowplayerCore', '~> 1.1.0'
@@ -16,12 +16,12 @@ end
 
 target 'flowplayer-demo' do
   # Pods for flowplayer-demo
-  xcodeproj 'flowplayer-demo.xcodeproj'
+  project 'flowplayer-demo.xcodeproj'
   common_pods
 end
 
 target 'flowplayer-objc-demo' do
   # Pods for flowplayer-objc-demo
-  xcodeproj 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
+#  project 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
   common_pods
 end
