@@ -15,11 +15,12 @@
 		4F193058234522D1009BEC88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F193057234522D1009BEC88 /* main.m */; };
 		4F19305F23452475009BEC88 /* TableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F19305E23452475009BEC88 /* TableItem.m */; };
 		4F193063234525DC009BEC88 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F193062234525DC009BEC88 /* PlayerViewController.m */; };
-		7ADFB3CD1FEC5976C560F3ED /* Pods_flowplayer_objc_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634584E65FB2250AE7E158BB /* Pods_flowplayer_objc_demo.framework */; };
+		52B533743FE6AD2DDFBDA11D /* Pods_flowplayer_objc_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB97AA7F0C64B0D76C9201B /* Pods_flowplayer_objc_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3648640442971E131D623EB3 /* Pods-flowplayer-objc-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-objc-demo.debug.xcconfig"; path = "Target Support Files/Pods-flowplayer-objc-demo/Pods-flowplayer-objc-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		3CB97AA7F0C64B0D76C9201B /* Pods_flowplayer_objc_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowplayer_objc_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F193045234522CF009BEC88 /* flowplayer-objc-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flowplayer-objc-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F193048234522CF009BEC88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F193049234522CF009BEC88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		4F193061234525BA009BEC88 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		4F193062234525DC009BEC88 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		5BBE8809D5BCF355C0B33CE4 /* Pods-flowplayer-objc-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-objc-demo.release.xcconfig"; path = "Target Support Files/Pods-flowplayer-objc-demo/Pods-flowplayer-objc-demo.release.xcconfig"; sourceTree = "<group>"; };
-		634584E65FB2250AE7E158BB /* Pods_flowplayer_objc_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowplayer_objc_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ADFB3CD1FEC5976C560F3ED /* Pods_flowplayer_objc_demo.framework in Frameworks */,
+				52B533743FE6AD2DDFBDA11D /* Pods_flowplayer_objc_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 		7030351B2E6FAC0EBBC70E65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				634584E65FB2250AE7E158BB /* Pods_flowplayer_objc_demo.framework */,
+				3CB97AA7F0C64B0D76C9201B /* Pods_flowplayer_objc_demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

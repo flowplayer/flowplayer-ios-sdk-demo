@@ -15,13 +15,13 @@ def common_pods
 end
 
 target 'flowplayer-demo' do
-  # Pods for flowplayer-demo
   project 'flowplayer-demo.xcodeproj'
+  # Pods for flowplayer-demo
   common_pods
 end
 
 target 'flowplayer-objc-demo' do
+  project 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
   # Pods for flowplayer-objc-demo
-#  project 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
   common_pods
 end
