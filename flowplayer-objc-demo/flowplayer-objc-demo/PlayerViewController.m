@@ -8,23 +8,23 @@
 
 #import "PlayerViewController.h"
 
-@interface PlayerViewController ()
+@interface PlayerViewController () {}
 @end
 
 @implementation PlayerViewController
 
 - (void)viewDidAppear:(BOOL)animated {
-    FPFlowplayerViewController* flowplayerViewController = FPFlowplayerViewController.new;
+    _flowplayerViewController = [[FPFlowplayerViewController alloc] init];
     
-    [_containerView addSubview:flowplayerViewController.view];
+    [_containerView addSubview:_flowplayerViewController.view];
     
     // Add the delegate after the flowplayerViewController has been added to the container.
-    [flowplayerViewController addPlayerDelegate:self];
+    [_flowplayerViewController addPlayerDelegate:self];
     
     if([self flowplayerMedia]) {
-        [flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
+        [_flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
     } else if ([self externalMedia]) {
-        [flowplayerViewController prepareWithExternalMedia:[self externalMedia] autoStart:true];
+        [_flowplayerViewController prepareWithExternalMedia:[self externalMedia] autoStart:true];
     }
 }
 
