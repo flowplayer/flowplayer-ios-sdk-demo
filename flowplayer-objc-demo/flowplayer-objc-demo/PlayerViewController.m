@@ -15,12 +15,18 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     _flowplayerViewController = [[FPFlowplayerViewController alloc] init];
-    
+    FPPlayerControlConfigBuilder * builder = [[FPPlayerControlConfig Builder] setMuteControl:true];
+    builder = [builder enablePlugins:@[@"speed"]];
+    builder = [builder setCustomWithKey:@"speed.options" value:@[@0.5, @1, @2, @5]];
+    builder = [builder setCustomWithKey:@"speed.labels" value:@[@"Slow", @"Normal", @"Double", @"Fast"]];
+
+    [_flowplayerViewController setControlConfig: [builder build]];
+
     [_containerView addSubview:_flowplayerViewController.view];
-    
+
     // Add the delegate after the flowplayerViewController has been added to the container.
     [_flowplayerViewController addPlayerDelegate:self];
-    
+
     if([self flowplayerMedia]) {
         [_flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
     } else if ([self externalMedia]) {
@@ -80,6 +86,14 @@
     printf("OnFullscreen");
 }
 
+- (void)onMuteWithEvent:(FPMuteEvent * _Nonnull)event {
+    printf("OnMuteChanged");
+}
+
+- (void)onVolumeWithEvent:(FPVolumeEvent * _Nonnull)event {
+    printf("OnVolumeChanged");
+}
+
 - (void)onIdleWithEvent:(FPIdleEvent * _Nonnull)event {
     printf("OnIdle");
 }
@@ -91,5 +105,10 @@
 - (void)onPlayWithEvent:(FPPlayEvent * _Nonnull)event {
     printf("OnPlay");
 }
+
+- (void)onSpeedWithEvent:(FPSpeedEvent * _Nonnull)event {
+    printf("OnSpeed");
+}
+
 
 @end

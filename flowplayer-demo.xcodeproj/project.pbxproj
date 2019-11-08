@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -94,7 +94,6 @@
 				CCDC331AC8D52A061B74D7B8 /* Pods-flowplayer-demo.debug.xcconfig */,
 				E523FE453F4DF614D7550658 /* Pods-flowplayer-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

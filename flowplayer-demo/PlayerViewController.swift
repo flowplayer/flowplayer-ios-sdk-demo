@@ -14,15 +14,25 @@ class PlayerViewController: UIViewController, FPFlowplayerDelegate {
     
     var flowplayerMedia: FPFlowplayerMedia?
     var externalMedia: FPExternalMedia?
-    
+
     private let flowplayerViewController = FPFlowplayerViewController()
-    
+
     override func viewDidAppear(_ animated: Bool) {
-        containerView.addSubview(flowplayerViewController.view)
         
+        let config = FPPlayerControlConfigBuilder()
+            .setMuteControl(true)
+            .enablePlugins(["speed"])
+            .setCustom(key: "speed.options", value: [0.5, 1, 2, 5])
+            .setCustom(key: "speed.labels", value: ["Slow", "Normal", "Double", "Fast"])
+            .build()
+        
+        flowplayerViewController.setControlConfig(config)
+        
+        containerView.addSubview(flowplayerViewController.view)
+
         // Add the delegate after the flowplayerViewController has been added to the container.
         flowplayerViewController.addPlayerDelegate(self)
-        
+
         if let flowplayerMedia = flowplayerMedia {
             flowplayerViewController.prepare(flowplayerMedia: flowplayerMedia, autoStart: true)
         } else if let externalMedia = externalMedia {
@@ -52,6 +62,18 @@ class PlayerViewController: UIViewController, FPFlowplayerDelegate {
     
     func onFullscreen(event: FPFullscreenEvent) {
         print("OnFullscreen")
+    }
+  
+    func onMute(event: FPMuteEvent) {
+        print("OnMute")
+    }
+    
+    func onVolume(event: FPVolumeEvent) {
+        print("OnVolume")
+    }
+    
+    func onSpeed(event: FPSpeedEvent) {
+        print("OnSpeed: \(event.speed)")
     }
     
     func onError(event: FPErrorEvent) {
