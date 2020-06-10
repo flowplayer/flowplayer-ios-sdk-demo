@@ -24,9 +24,10 @@
 
     [_containerView addSubview:_flowplayerViewController.view];
 
-    // Add the delegate after the flowplayerViewController has been added to the container.
+    // IMPORTANT: Add a delegate AFTER the player view has been added to your view.
     [_flowplayerViewController addPlayerDelegate:self];
 
+    // IMPORTANT: Call prepare() AFTER the player view has been added to your view.
     if([self flowplayerMedia]) {
         [_flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
     } else if ([self externalMedia]) {

@@ -30,9 +30,10 @@ class PlayerViewController: UIViewController, FPFlowplayerDelegate {
         
         containerView.addSubview(flowplayerViewController.view)
 
-        // Add the delegate after the flowplayerViewController has been added to the container.
+        // IMPORTANT: Add a delegate AFTER the player view has been added to your view.
         flowplayerViewController.addPlayerDelegate(self)
 
+        // IMPORTANT: Call prepare() AFTER the player view has been added to your view.
         if let flowplayerMedia = flowplayerMedia {
             flowplayerViewController.prepare(flowplayerMedia: flowplayerMedia, autoStart: true)
         } else if let externalMedia = externalMedia {
