@@ -111,5 +111,16 @@
     printf("OnSpeed");
 }
 
+- (void)onAudioTracksWithEvent:(FPAudioTracksEvent * _Nonnull)event {
+    printf("OnAudioTracks");
+}
+
+- (void)onAudioTrackSelectWithEvent:(FPAudioTrackSelectEvent * _Nonnull)event {
+    printf("OnAudioTrackSelect");
+}
+
+- (void)onOvpMetadataWithEvent:(FPOvpMetadataEvent * _Nonnull)event {
+    printf("OnOvpMetadata");
+}
 
 @end

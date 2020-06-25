@@ -10,6 +10,8 @@ import UIKit
 import FlowplayerCore
 
 class PlayerViewController: UIViewController, FPFlowplayerDelegate {
+
+    
     @IBOutlet weak var containerView: UIView!
     
     var flowplayerMedia: FPFlowplayerMedia?
@@ -115,6 +117,18 @@ class PlayerViewController: UIViewController, FPFlowplayerDelegate {
     
     func onAdError(event: FPAdErrorEvent) {
         print("OnAdError")
+    }
+    
+    func onAudioTracks(event: FPAudioTracksEvent) {
+        print("OnAudioTracks")
+    }
+    
+    func onAudioTrackSelect(event: FPAudioTrackSelectEvent) {
+        print("OnAudioTrackSelect")
+    }
+    
+    func onOvpMetadata(event: FPOvpMetadataEvent) {
+        print("OnOvpMetadata")
     }
 }
 
