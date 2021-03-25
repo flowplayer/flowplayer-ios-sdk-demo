@@ -10,6 +10,18 @@ import UIKit
 import FlowplayerCore
 
 class PlayerViewController: UIViewController, FPFlowplayerDelegate {
+    func onSubtitleTrackSelect(event: FPSubtitleTrackSelectEvent) {
+        // TODO
+    }
+    
+    func onSubtitleTracks(event: FPSubtitleTracksEvent) {
+        // TODO
+    }
+    
+    func onCasting(event: FPCastingEvent) {
+        // TODO
+    }
+    
 
     
     @IBOutlet weak var containerView: UIView!
