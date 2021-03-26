@@ -9,7 +9,7 @@ project 'flowplayer-demo.xcodeproj'
 project 'flowplayer-objc-demo/flowplayer-objc-demo.xcodeproj'
 
 def common_pods
-  pod 'FlowplayerCore', '~> 1.4.0'
+  pod 'FlowplayerCore', '~> 1.5.0'
   pod 'Rollbar', '~> 1.8.1'
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.9'
 end
