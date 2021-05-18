@@ -1,10 +1,10 @@
 PODS:
-  - FlowplayerCore (1.5.2-alpha0)
-  - GoogleAds-IMA-iOS-SDK (3.14.1)
+  - FlowplayerCore (1.5.2)
+  - GoogleAds-IMA-iOS-SDK (3.14.3)
   - Rollbar (1.8.4)
 
 DEPENDENCIES:
-  - FlowplayerCore (= 1.5.2-alpha0)
+  - FlowplayerCore (= 1.5.2)
   - GoogleAds-IMA-iOS-SDK (~> 3.9)
   - Rollbar (~> 1.8.1)
 
@@ -15,10 +15,10 @@ SPEC REPOS:
     - Rollbar
 
 SPEC CHECKSUMS:
-  FlowplayerCore: d772b2b248d55ee65d42b2440e6d30ea6eb5c0ac
-  GoogleAds-IMA-iOS-SDK: cc10f58c94fe19664f223e290099624f4696001f
+  FlowplayerCore: dcbd59a9993e83da70be5a32e8a09b357b928b45
+  GoogleAds-IMA-iOS-SDK: 2a9b7b14bda4993306f05287f952dce41b5be4ad
   Rollbar: 1b7918ecf1e92b143b71da329fbd8ff981ed30e5
 
-PODFILE CHECKSUM: 76d917977a65742aa083ca5e9cfc0295303129b6
+PODFILE CHECKSUM: 943a9bbc6d938742141bd2085d6271b5812ad14e
 
 COCOAPODS: 1.10.1
