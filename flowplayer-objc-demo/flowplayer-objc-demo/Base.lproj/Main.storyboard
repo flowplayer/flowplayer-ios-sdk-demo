@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EeK-iP-dNR">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EeK-iP-dNR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Flowplayer-->
         <scene sceneID="j3g-LL-Shg">
             <objects>
                 <tableViewController id="xYI-Cd-A8H" customClass="MainViewController" sceneMemberID="viewController">
@@ -19,16 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oIu-bf-z6t">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell-id" id="oIu-bf-z6t">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oIu-bf-z6t" id="jJZ-zq-cgq">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="playerControllerSegue" id="JHv-2h-BzM"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +31,10 @@
                             <outlet property="delegate" destination="xYI-Cd-A8H" id="tEA-WF-4g7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dKC-xg-zk3"/>
+                    <navigationItem key="navigationItem" title="Flowplayer" id="dKC-xg-zk3"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="playerControllerSegue" id="lBg-gJ-VXf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6J-Rm-Hbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,9 +63,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEc-as-jIS">
+                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Cvy-sc-oUF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB9-33-KTO">
+                                <rect key="frame" x="113.5" y="278" width="187" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Vp-LV-eCs"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8D6-68-tXY"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="top" secondItem="ZB9-33-KTO" secondAttribute="bottom" constant="20" id="VbQ-HS-7eg"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="czf-ya-c2Z"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dZ1-mf-tUz"/>
+                            <constraint firstItem="ZB9-33-KTO" firstAttribute="centerX" secondItem="iEc-as-jIS" secondAttribute="centerX" id="tcr-FB-rPJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="a8X-Xw-c4w"/>
+                    <connections>
+                        <outlet property="containerView" destination="iEc-as-jIS" id="Yh9-rg-Si8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

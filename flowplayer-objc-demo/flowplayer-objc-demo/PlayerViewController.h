@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FlowplayerCore/FlowplayerCore.h>
-#import <FlowplayerCore/FlowplayerCore-Swift.h>
+#import <FlowplayerUtil/FlowplayerUtil.h>
 
 @interface PlayerViewController : UIViewController <FPFlowplayerDelegate>
 @property (nonatomic, weak) IBOutlet UIView *containerView;

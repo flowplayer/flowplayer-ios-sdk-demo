@@ -123,4 +123,65 @@
     printf("OnOvpMetadata");
 }
 
+- (void)onCastingWithEvent:(FPCastingEvent * _Nonnull)event {
+	printf("onCastingWithEvent");
+}
+
+
+- (void)onSubtitleTrackSelectWithEvent:(FPSubtitleTrackSelectEvent * _Nonnull)event {
+	printf("onSubtitleTrackSelectWithEvent");
+}
+
+
+- (void)onSubtitleTracksWithEvent:(FPSubtitleTracksEvent * _Nonnull)event {
+	printf("onSubtitleTracksWithEvent");
+}
+
+
+- (void)encodeWithCoder:(nonnull NSCoder *)coder {
+	printf("encodeWithCoder");
+}
+
+- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
+	printf("traitCollectionDidChange");
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+	printf("preferredContentSizeDidChangeForChildContentContainer");
+}
+
+- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
+	printf("sizeForChildContentContainer");
+	return CGSizeZero;
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+	printf("systemLayoutFittingSizeDidChangeForChildContentContainer");
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+	printf("viewWillTransitionToSize");
+}
+
+- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+	printf("viewWillTransitionToSize");
+}
+
+- (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
+	printf("didUpdateFocusInContext");
+}
+
+- (void)setNeedsFocusUpdate {
+	printf("setNeedsFocusUpdate");
+}
+
+- (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
+	printf("shouldUpdateFocusInContext");
+	return false;
+}
+
+- (void)updateFocusIfNeeded {
+	printf("updateFocusIfNeeded");
+}
+
 @end
