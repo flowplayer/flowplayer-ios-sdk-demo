@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMl-9P-ugx">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMl-9P-ugx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +18,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X6c-Wx-OSe">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X6c-Wx-OSe" id="dv7-uP-J5Q">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -67,28 +65,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Bd-bOn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="240"/>
+                                <rect key="frame" x="17" y="328" width="380" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="2pZ-eV-hkD"/>
+                                    <constraint firstAttribute="width" constant="380" id="Y1E-lQ-q51"/>
+                                    <constraint firstAttribute="height" constant="240" id="a2y-B8-r4a"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-RR-udV">
-                                <rect key="frame" x="140.5" y="370" width="133" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-RR-udV">
+                                <rect key="frame" x="17" y="269" width="380" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zkG-RR-udV" firstAttribute="top" secondItem="FRU-Bd-bOn" secondAttribute="bottom" constant="42" id="Tba-rN-TIe"/>
-                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WAT-f9-FcP"/>
-                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h3y-iA-awS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRU-Bd-bOn" secondAttribute="trailing" id="l0z-KD-V5d"/>
-                            <constraint firstItem="zkG-RR-udV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ndK-kL-ReO"/>
+                            <constraint firstItem="zkG-RR-udV" firstAttribute="leading" secondItem="FRU-Bd-bOn" secondAttribute="leading" id="8A4-L1-oeB"/>
+                            <constraint firstItem="zkG-RR-udV" firstAttribute="trailing" secondItem="FRU-Bd-bOn" secondAttribute="trailing" id="Qlp-uk-bT6"/>
+                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hS0-Vs-EnD"/>
+                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m41-0Q-2IN"/>
+                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="top" secondItem="zkG-RR-udV" secondAttribute="bottom" constant="32" id="mc0-9V-7EH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="FRU-Bd-bOn" id="F5y-xE-fTZ"/>

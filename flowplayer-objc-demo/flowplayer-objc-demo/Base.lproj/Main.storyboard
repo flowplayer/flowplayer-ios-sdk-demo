@@ -64,29 +64,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEc-as-jIS">
-                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="Cvy-sc-oUF"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB9-33-KTO">
-                                <rect key="frame" x="113.5" y="278" width="187" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB9-33-KTO">
+                                <rect key="frame" x="17" y="266" width="380" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEc-as-jIS">
+                                <rect key="frame" x="17" y="328" width="380" height="240"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="2cl-1y-LUd"/>
+                                    <constraint firstAttribute="width" constant="380" id="FCR-zm-BAy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Vp-LV-eCs"/>
-                            <constraint firstItem="iEc-as-jIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8D6-68-tXY"/>
-                            <constraint firstItem="iEc-as-jIS" firstAttribute="top" secondItem="ZB9-33-KTO" secondAttribute="bottom" constant="20" id="VbQ-HS-7eg"/>
-                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="czf-ya-c2Z"/>
-                            <constraint firstItem="iEc-as-jIS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dZ1-mf-tUz"/>
-                            <constraint firstItem="ZB9-33-KTO" firstAttribute="centerX" secondItem="iEc-as-jIS" secondAttribute="centerX" id="tcr-FB-rPJ"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="top" secondItem="ZB9-33-KTO" secondAttribute="bottom" constant="32" id="32e-do-8Pk"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E1C-gW-7DS"/>
+                            <constraint firstItem="ZB9-33-KTO" firstAttribute="leading" secondItem="iEc-as-jIS" secondAttribute="leading" id="G2D-3W-iC3"/>
+                            <constraint firstItem="iEc-as-jIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VEy-46-X5D"/>
+                            <constraint firstItem="ZB9-33-KTO" firstAttribute="trailing" secondItem="iEc-as-jIS" secondAttribute="trailing" id="lBC-Ii-g6P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a8X-Xw-c4w"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="-19"/>
+            <point key="canvasLocation" x="815.94202898550736" y="-19.419642857142858"/>
         </scene>
     </scenes>
 </document>
