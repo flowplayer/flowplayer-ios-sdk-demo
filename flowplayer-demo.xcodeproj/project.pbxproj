@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F2FD2A6231BE7D100E525AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A5231BE7D100E525AB /* MainViewController.swift */; };
+		4F2FD2A6231BE7D100E525AB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A5231BE7D100E525AB /* MainController.swift */; };
 		4F2FD2A8231BE81A00E525AB /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A7231BE81A00E525AB /* TableItem.swift */; };
 		4F2FD2AA231BE85000E525AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A9231BE85000E525AB /* Constants.swift */; };
 		4F5869A0231BAE01000885CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F58699F231BAE01000885CA /* AppDelegate.swift */; };
-		4F5869A2231BAE01000885CA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5869A1231BAE01000885CA /* PlayerViewController.swift */; };
+		4F5869A2231BAE01000885CA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5869A1231BAE01000885CA /* PlayerController.swift */; };
 		4F5869A5231BAE01000885CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A3231BAE01000885CA /* Main.storyboard */; };
 		4F5869A7231BAE03000885CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A6231BAE03000885CA /* Assets.xcassets */; };
 		4F5869AA231BAE03000885CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A8231BAE03000885CA /* LaunchScreen.storyboard */; };
@@ -20,12 +20,12 @@
 
 /* Begin PBXFileReference section */
 		4487D646C71002D3EA476AFC /* Pods-flowplayer-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.release.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.release.xcconfig"; sourceTree = "<group>"; };
-		4F2FD2A5231BE7D100E525AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4F2FD2A5231BE7D100E525AB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		4F2FD2A7231BE81A00E525AB /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
 		4F2FD2A9231BE85000E525AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4F58699C231BAE01000885CA /* flowplayer-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flowplayer-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F58699F231BAE01000885CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F5869A1231BAE01000885CA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		4F5869A1231BAE01000885CA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		4F5869A4231BAE01000885CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F5869A6231BAE03000885CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5869A9231BAE03000885CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,15 +67,9 @@
 		4F58699E231BAE01000885CA /* flowplayer-demo */ = {
 			isa = PBXGroup;
 			children = (
-				4F58699F231BAE01000885CA /* AppDelegate.swift */,
-				4F2FD2A5231BE7D100E525AB /* MainViewController.swift */,
-				4F5869A1231BAE01000885CA /* PlayerViewController.swift */,
-				4F2FD2A7231BE81A00E525AB /* TableItem.swift */,
-				4F2FD2A9231BE85000E525AB /* Constants.swift */,
-				4F5869A3231BAE01000885CA /* Main.storyboard */,
-				4F5869A6231BAE03000885CA /* Assets.xcassets */,
-				4F5869A8231BAE03000885CA /* LaunchScreen.storyboard */,
-				4F5869AB231BAE03000885CA /* Info.plist */,
+				E18D5DF4272EACB3000D1A0A /* supporting */,
+				E18D5DF3272EACAC000D1A0A /* storyboard */,
+				E18D5DF2272EACA6000D1A0A /* source */,
 			);
 			path = "flowplayer-demo";
 			sourceTree = "<group>";
@@ -87,6 +81,36 @@
 				4487D646C71002D3EA476AFC /* Pods-flowplayer-demo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E18D5DF2272EACA6000D1A0A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				4F58699F231BAE01000885CA /* AppDelegate.swift */,
+				4F2FD2A9231BE85000E525AB /* Constants.swift */,
+				4F2FD2A5231BE7D100E525AB /* MainController.swift */,
+				4F5869A1231BAE01000885CA /* PlayerController.swift */,
+				4F2FD2A7231BE81A00E525AB /* TableItem.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E18D5DF3272EACAC000D1A0A /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F5869A3231BAE01000885CA /* Main.storyboard */,
+				4F5869A8231BAE03000885CA /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		E18D5DF4272EACB3000D1A0A /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				4F5869A6231BAE03000885CA /* Assets.xcassets */,
+				4F5869AB231BAE03000885CA /* Info.plist */,
+			);
+			path = supporting;
 			sourceTree = "<group>";
 		};
 		E50EA87AC0DB3BCBFA0DA68E /* Frameworks */ = {
@@ -126,7 +150,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Flowplayer AB";
 				TargetAttributes = {
 					4F58699B231BAE01000885CA = {
@@ -213,9 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2FD2AA231BE85000E525AB /* Constants.swift in Sources */,
-				4F2FD2A6231BE7D100E525AB /* MainViewController.swift in Sources */,
+				4F2FD2A6231BE7D100E525AB /* MainController.swift in Sources */,
 				4F2FD2A8231BE81A00E525AB /* TableItem.swift in Sources */,
-				4F5869A2231BAE01000885CA /* PlayerViewController.swift in Sources */,
+				4F5869A2231BAE01000885CA /* PlayerController.swift in Sources */,
 				4F5869A0231BAE01000885CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +292,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -330,6 +355,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -370,7 +396,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "flowplayer-demo/Info.plist";
+				INFOPLIST_FILE = "flowplayer-demo/supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,7 +421,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "flowplayer-demo/Info.plist";
+				INFOPLIST_FILE = "flowplayer-demo/supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

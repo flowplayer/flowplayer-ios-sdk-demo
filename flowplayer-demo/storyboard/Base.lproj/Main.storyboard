@@ -5,28 +5,26 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Flowplayer-->
         <scene sceneID="hPP-f4-9qZ">
             <objects>
-                <tableViewController id="KIp-79-ADM" customClass="MainViewController" customModule="flowplayer_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KIp-79-ADM" customClass="MainController" customModule="flowplayer_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k4T-yJ-4An">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X6c-Wx-OSe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="X6c-Wx-OSe">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X6c-Wx-OSe" id="dv7-uP-J5Q">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="PlayerViewControllerSegue" id="S79-2A-6NG"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +33,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Flowplayer" id="4WC-0w-pcN"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="playerControllerSegue" id="hsS-oX-xr1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h34-gI-TDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,41 +57,43 @@
             </objects>
             <point key="canvasLocation" x="-1471" y="43"/>
         </scene>
-        <!--Player View Controller-->
+        <!--Player Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PlayerViewController" customModule="flowplayer_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlayerController" customModule="flowplayer_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Bd-bOn">
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Bd-bOn">
                                 <rect key="frame" x="17" y="328" width="380" height="240"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="380" id="Y1E-lQ-q51"/>
                                     <constraint firstAttribute="height" constant="240" id="a2y-B8-r4a"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-RR-udV">
-                                <rect key="frame" x="17" y="269" width="380" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfn-wE-U3v">
+                                <rect key="frame" x="17" y="588" width="380" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zkG-RR-udV" firstAttribute="leading" secondItem="FRU-Bd-bOn" secondAttribute="leading" id="8A4-L1-oeB"/>
-                            <constraint firstItem="zkG-RR-udV" firstAttribute="trailing" secondItem="FRU-Bd-bOn" secondAttribute="trailing" id="Qlp-uk-bT6"/>
+                            <constraint firstItem="Gfn-wE-U3v" firstAttribute="leading" secondItem="FRU-Bd-bOn" secondAttribute="leading" id="9RP-ce-rxe"/>
+                            <constraint firstItem="Gfn-wE-U3v" firstAttribute="trailing" secondItem="FRU-Bd-bOn" secondAttribute="trailing" id="NWf-Md-YUk"/>
+                            <constraint firstItem="Gfn-wE-U3v" firstAttribute="top" secondItem="FRU-Bd-bOn" secondAttribute="bottom" constant="20" id="cov-fj-k7s"/>
                             <constraint firstItem="FRU-Bd-bOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hS0-Vs-EnD"/>
                             <constraint firstItem="FRU-Bd-bOn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m41-0Q-2IN"/>
-                            <constraint firstItem="FRU-Bd-bOn" firstAttribute="top" secondItem="zkG-RR-udV" secondAttribute="bottom" constant="32" id="mc0-9V-7EH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EnO-n0-MJv"/>
                     <connections>
                         <outlet property="containerView" destination="FRU-Bd-bOn" id="F5y-xE-fTZ"/>
+                        <outlet property="mediaLabel" destination="Gfn-wE-U3v" id="7Rx-BE-Cjq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,4 +101,12 @@
             <point key="canvasLocation" x="215.94202898550725" y="42.857142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
