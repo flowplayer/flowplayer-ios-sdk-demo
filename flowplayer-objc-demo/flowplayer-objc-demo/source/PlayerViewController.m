@@ -1,9 +1,8 @@
 //
 //  PlayerViewController.m
-//  flowplayer-objc-demo
+//  FlowplayerExample-ObjectiveC
 //
-//  Created by Georgios Savvidis on 02.10.19.
-//  Copyright © 2019 Flowplayer AB. All rights reserved.
+//  Created by Mehdi on 5. 7. 2021..
 //
 
 #import "PlayerViewController.h"
@@ -14,129 +13,130 @@
 @implementation PlayerViewController
 
 - (void)viewDidAppear:(BOOL)animated {
-    _flowplayerViewController = [[FPFlowplayerViewController alloc] init];
-    FPPlayerControlConfigBuilder * builder = [[FPPlayerControlConfig Builder] setMuteControl:true];
-    builder = [builder enablePlugins:@[@"speed"]];
-    builder = [builder setCustomWithKey:@"speed.options" value:@[@0.5, @1, @2, @5]];
-    builder = [builder setCustomWithKey:@"speed.labels" value:@[@"Slow", @"Normal", @"Double", @"Fast"]];
+	_flowplayerViewController = [[FPFlowplayerViewController alloc] init];
+	FPPlayerControlConfigBuilder * builder = [[FPPlayerControlConfig Builder] setMuteControl:true];
+	
+	builder = [builder enablePlugins:_plugins];
+	builder = [builder setCustomWithKey:@"speed.options" value:@[@0.5, @1, @2, @5]];
+	builder = [builder setCustomWithKey:@"speed.labels" value:@[@"Slow", @"Normal", @"Double", @"Fast"]];
 
-    [_flowplayerViewController setControlConfig: [builder build]];
+	[_flowplayerViewController setControlConfig: [builder build]];
 
-    [_containerView addSubview:_flowplayerViewController.view];
+	[_containerView addSubview:_flowplayerViewController.view];
 
-    // IMPORTANT: Add a delegate AFTER the player view has been added to your view.
-    [_flowplayerViewController addPlayerDelegate:self];
+	// Add the delegate after the flowplayerViewController has been added to the container.
+	[_flowplayerViewController addPlayerDelegate:self];
 
-    // IMPORTANT: Call prepare() AFTER the player view has been added to your view.
-    if([self flowplayerMedia]) {
-        [_flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
-    } else if ([self externalMedia]) {
-        [_flowplayerViewController prepareWithExternalMedia:[self externalMedia] autoStart:true];
-    }
+	if([self flowplayerMedia]) {
+		[_flowplayerViewController prepareWithFlowplayerMedia:[self flowplayerMedia] autoStart:true];
+	} else if ([self externalMedia]) {
+		[_flowplayerViewController prepareWithExternalMedia:[self externalMedia] autoStart:true];
+	}
 }
 
 - (void)onAdBreakCompleteWithEvent:(FPAdBreakCompleteEvent * _Nonnull)event {
-    printf("OnAdBreakComplete");
+	printf("OnAdBreakComplete");
 }
 
 - (void)onAdBreakStartWithEvent:(FPAdBreakStartEvent * _Nonnull)event {
-    printf("OnAdBreakStart");
+	printf("OnAdBreakStart");
 }
 
 - (void)onAdClickWithEvent:(FPAdClickEvent * _Nonnull)event {
-    printf("OnAdClick");
+	printf("OnAdClick");
 }
 
 - (void)onAdCompleteWithEvent:(FPAdCompleteEvent * _Nonnull)event {
-    printf("OnAdComplete");
+	printf("OnAdComplete");
 }
 
 - (void)onAdErrorWithEvent:(FPAdErrorEvent * _Nonnull)event {
-    printf("OnAdError");
+	printf("OnAdError");
 }
 
 - (void)onAdPauseWithEvent:(FPAdPauseEvent * _Nonnull)event {
-    printf("OnAdPause");
+	printf("OnAdPause");
 }
 
 - (void)onAdResumeWithEvent:(FPAdResumeEvent * _Nonnull)event {
-    printf("OnAdResume");
+	printf("OnAdResume");
 }
 
 - (void)onAdSkipWithEvent:(FPAdSkipEvent * _Nonnull)event {
-    printf("OnAdSkip");
+	printf("OnAdSkip");
 }
 
 - (void)onAdStartWithEvent:(FPAdStartEvent * _Nonnull)event {
-    printf("OnAdStart");
+	printf("OnAdStart");
 }
 
 - (void)onBufferWithEvent:(FPBufferEvent * _Nonnull)event {
-    printf("OnBuffer");
+	printf("OnBuffer");
 }
 
 - (void)onCompleteWithEvent:(FPCompleteEvent * _Nonnull)event {
-    printf("OnComplete");
+	printf("OnComplete");
 }
 
 - (void)onErrorWithEvent:(FPErrorEvent * _Nonnull)event {
-    printf("OnError");
+	printf("OnError");
 }
 
 - (void)onFullscreenWithEvent:(FPFullscreenEvent * _Nonnull)event {
-    printf("OnFullscreen");
+	printf("OnFullscreen");
 }
 
 - (void)onMuteWithEvent:(FPMuteEvent * _Nonnull)event {
-    printf("OnMuteChanged");
+	printf("OnMuteChanged");
 }
 
 - (void)onVolumeWithEvent:(FPVolumeEvent * _Nonnull)event {
-    printf("OnVolumeChanged");
+	printf("OnVolumeChanged");
 }
 
 - (void)onIdleWithEvent:(FPIdleEvent * _Nonnull)event {
-    printf("OnIdle");
+	printf("OnIdle");
 }
 
 - (void)onPauseWithEvent:(FPPauseEvent * _Nonnull)event {
-    printf("OnPause");
+	printf("OnPause");
 }
 
 - (void)onPlayWithEvent:(FPPlayEvent * _Nonnull)event {
-    printf("OnPlay");
+	printf("OnPlay");
 }
 
 - (void)onSpeedWithEvent:(FPSpeedEvent * _Nonnull)event {
-    printf("OnSpeed");
+	printf("OnSpeed");
 }
 
-- (void)onAudioTracksWithEvent:(FPAudioTracksEvent * _Nonnull)event {
-    printf("OnAudioTracks");
+- (void)onAudioTracksWithEvent:(FPAudioTracksEvent *)event {
+	printf("OnAudioTracks");
 }
 
-- (void)onAudioTrackSelectWithEvent:(FPAudioTrackSelectEvent * _Nonnull)event {
-    printf("OnAudioTrackSelect");
+- (void)onAudioTrackSelectWithEvent:(FPAudioTrackSelectEvent *)event {
+	printf("OnAudioTrackSelect");
 }
 
 - (void)onOvpMetadataWithEvent:(FPOvpMetadataEvent * _Nonnull)event {
-    printf("OnOvpMetadata");
+	printf("onOvpMetadataWithEvent");
 }
 
 - (void)onCastingWithEvent:(FPCastingEvent * _Nonnull)event {
 	printf("onCastingWithEvent");
 }
 
-
 - (void)onSubtitleTrackSelectWithEvent:(FPSubtitleTrackSelectEvent * _Nonnull)event {
-	printf("onSubtitleTrackSelectWithEvent");
+	printf("FPSubtitleTrackSelectEvent");
 }
-
 
 - (void)onSubtitleTracksWithEvent:(FPSubtitleTracksEvent * _Nonnull)event {
-	printf("onSubtitleTracksWithEvent");
+	printf("FPSubtitleTracksEvent");
 }
 
+- (void)onReadyWithEvent:(FPReadyEvent * _Nonnull)event {
+	printf("onReadyEvent");
+}
 
 - (void)encodeWithCoder:(nonnull NSCoder *)coder {
 	printf("encodeWithCoder");
@@ -164,7 +164,7 @@
 }
 
 - (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
-	printf("viewWillTransitionToSize");
+	printf("willTransitionToTraitCollection");
 }
 
 - (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
@@ -176,12 +176,11 @@
 }
 
 - (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
-	printf("shouldUpdateFocusInContext");
 	return false;
 }
 
 - (void)updateFocusIfNeeded {
-	printf("updateFocusIfNeeded");
+	printf("shouldUpdateFocusInContext");
 }
 
 @end

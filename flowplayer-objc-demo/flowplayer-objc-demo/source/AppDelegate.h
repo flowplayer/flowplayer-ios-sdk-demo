@@ -1,17 +1,16 @@
 //
 //  AppDelegate.h
-//  flowplayer-objc-demo
+//  FlowplayerExample-ObjectiveC
 //
-//  Created by Georgios Savvidis on 02.10.19.
-//  Copyright © 2019 Flowplayer AB. All rights reserved.
+//  Created by Mehdi on 5. 7. 2021..
 //
+
 
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

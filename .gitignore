@@ -115,3 +115,6 @@ iOSInjectionProject/
 # Documentation generation
 
 */docs/*
+
+# macOS
+.DS_Store

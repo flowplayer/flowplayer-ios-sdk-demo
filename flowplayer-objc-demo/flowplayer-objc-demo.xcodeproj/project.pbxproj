@@ -81,19 +81,9 @@
 		4F193047234522CF009BEC88 /* flowplayer-objc-demo */ = {
 			isa = PBXGroup;
 			children = (
-				4F193048234522CF009BEC88 /* AppDelegate.h */,
-				4F193049234522CF009BEC88 /* AppDelegate.m */,
-				4F19306023452484009BEC88 /* TableItem.h */,
-				4F19305E23452475009BEC88 /* TableItem.m */,
-				4F19304B234522CF009BEC88 /* MainViewController.h */,
-				4F19304C234522CF009BEC88 /* MainViewController.m */,
-				4F193061234525BA009BEC88 /* PlayerViewController.h */,
-				4F193062234525DC009BEC88 /* PlayerViewController.m */,
-				4F19304E234522CF009BEC88 /* Main.storyboard */,
-				4F193051234522D1009BEC88 /* Assets.xcassets */,
-				4F193053234522D1009BEC88 /* LaunchScreen.storyboard */,
-				4F193056234522D1009BEC88 /* Info.plist */,
-				4F193057234522D1009BEC88 /* main.m */,
+				E1BAEB202746CB12000CCFF7 /* supporting */,
+				E1BAEB1F2746CB05000CCFF7 /* storyboard */,
+				E1BAEB1E2746CAF7000CCFF7 /* source */,
 			);
 			path = "flowplayer-objc-demo";
 			sourceTree = "<group>";
@@ -104,6 +94,40 @@
 				3CB97AA7F0C64B0D76C9201B /* Pods_flowplayer_objc_demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1BAEB1E2746CAF7000CCFF7 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				4F193048234522CF009BEC88 /* AppDelegate.h */,
+				4F193049234522CF009BEC88 /* AppDelegate.m */,
+				4F193057234522D1009BEC88 /* main.m */,
+				4F19304B234522CF009BEC88 /* MainViewController.h */,
+				4F19304C234522CF009BEC88 /* MainViewController.m */,
+				4F193061234525BA009BEC88 /* PlayerViewController.h */,
+				4F193062234525DC009BEC88 /* PlayerViewController.m */,
+				4F19306023452484009BEC88 /* TableItem.h */,
+				4F19305E23452475009BEC88 /* TableItem.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E1BAEB1F2746CB05000CCFF7 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F193053234522D1009BEC88 /* LaunchScreen.storyboard */,
+				4F19304E234522CF009BEC88 /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		E1BAEB202746CB12000CCFF7 /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				4F193051234522D1009BEC88 /* Assets.xcassets */,
+				4F193056234522D1009BEC88 /* Info.plist */,
+			);
+			path = supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -372,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "flowplayer-objc-demo/Info.plist";
+				INFOPLIST_FILE = "flowplayer-objc-demo/supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "flowplayer-objc-demo/Info.plist";
+				INFOPLIST_FILE = "flowplayer-objc-demo/supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

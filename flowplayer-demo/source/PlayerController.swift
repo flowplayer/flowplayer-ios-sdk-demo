@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FlowplayerCore
+import Flowplayer
 
 class PlayerController: UIViewController  {
 	
@@ -83,6 +83,10 @@ extension PlayerController: FPFlowplayerDelegate {
 	
 	func onIdle(event: FPIdleEvent) {
 		print("onIdle")
+	}
+	
+	func onReady(event: FPReadyEvent) {
+		print("onReady")
 	}
 	
 	func onPlay(event: FPPlayEvent) {
