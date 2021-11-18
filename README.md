@@ -1,7 +1,9 @@
 # About
 This is a sample application that demonstrates how to integrate Flowplayer iOS SDK in your iOS project.
 
-Find the SDK's latest release [here](https://github.com/flowplayer/flowplayer-ios-sdk-demo/releases/latest).
+iOS SDK's latest release [here](https://github.com/flowplayer/flowplayer-ios-sdk-demo/releases/latest).
+
+tvOS SDK's latest release [here](https://github.com/flowplayer/flowplayer-tvos-sdk-demo/releases/latest).
 
 If you found any issues or you have any questions, please report them at the issue tracker of this repository.
 
