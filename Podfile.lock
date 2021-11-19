@@ -1,16 +1,16 @@
 PODS:
-  - Flowplayer (3.0.1)
-  - Flowplayer-tvOS (1.0.0)
+  - Flowplayer (3.0.2)
+  - Flowplayer-tvOS (1.0.2)
   - GoogleAds-IMA-iOS-SDK (3.14.4)
   - GoogleAds-IMA-tvOS-SDK (4.4.2)
   - Rollbar (1.12.14)
 
 DEPENDENCIES:
-  - Flowplayer (= 3.0.1)
-  - Flowplayer-tvOS (= 1.0.0)
+  - Flowplayer (= 3.0.2)
+  - Flowplayer-tvOS (= 1.0.2)
   - GoogleAds-IMA-iOS-SDK (= 3.14.4)
   - GoogleAds-IMA-tvOS-SDK (= 4.4.2)
-  - Rollbar (~> 1.12.14)
+  - Rollbar (= 1.12.14)
 
 SPEC REPOS:
   trunk:
@@ -21,12 +21,12 @@ SPEC REPOS:
     - Rollbar
 
 SPEC CHECKSUMS:
-  Flowplayer: 68bd73720c3612d05d17723865c3e7e7f8b22539
-  Flowplayer-tvOS: fcfc6a49a919f9cfdf2e22bbdc3b7f748ffed356
+  Flowplayer: 5942b45ecc66c554ffdde7c18301b228c8fd8817
+  Flowplayer-tvOS: 16c569539aaea751052a52faf91a3daa465ed18c
   GoogleAds-IMA-iOS-SDK: c190284044e9a28b3e7422ba9886db015c71a84f
   GoogleAds-IMA-tvOS-SDK: ab4419ba59b75c77b329e86ce408cb81ac117fe4
   Rollbar: 58f315609433558a82af5a54d7888bb020bec561
 
-PODFILE CHECKSUM: 24cec18d64f7fdae41714ffe5b7222297c08bea2
+PODFILE CHECKSUM: ae6694bde3a03873a506aad2fb95915d5ef5cdb0
 
 COCOAPODS: 1.11.2

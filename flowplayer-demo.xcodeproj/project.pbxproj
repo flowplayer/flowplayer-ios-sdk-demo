@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003911054B6692A389D75D58 /* Pods_flowplayer_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4702D29F80B2FFF43E442BE /* Pods_flowplayer_demo.framework */; };
 		4F2FD2A6231BE7D100E525AB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A5231BE7D100E525AB /* MainController.swift */; };
 		4F2FD2A8231BE81A00E525AB /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A7231BE81A00E525AB /* TableItem.swift */; };
 		4F2FD2AA231BE85000E525AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FD2A9231BE85000E525AB /* Constants.swift */; };
@@ -15,12 +16,10 @@
 		4F5869A5231BAE01000885CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A3231BAE01000885CA /* Main.storyboard */; };
 		4F5869A7231BAE03000885CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A6231BAE03000885CA /* Assets.xcassets */; };
 		4F5869AA231BAE03000885CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5869A8231BAE03000885CA /* LaunchScreen.storyboard */; };
-		B700D19BB4C8B649156438A9 /* Pods_flowplayer_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB4ADBD5D643D91072BDC0 /* Pods_flowplayer_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15CB4ADBD5D643D91072BDC0 /* Pods_flowplayer_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowplayer_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EAE252105B895FBEF81B731 /* Pods-flowplayer-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.release.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.release.xcconfig"; sourceTree = "<group>"; };
+		1A42B6CAF4B75EF62CCB0577 /* Pods-flowplayer-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.debug.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2FD2A5231BE7D100E525AB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		4F2FD2A7231BE81A00E525AB /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
 		4F2FD2A9231BE85000E525AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -31,7 +30,8 @@
 		4F5869A6231BAE03000885CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5869A9231BAE03000885CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F5869AB231BAE03000885CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A51A4D8FAF464935A91DB98 /* Pods-flowplayer-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.debug.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8EE86B45968EF83107E16208 /* Pods-flowplayer-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flowplayer-demo.release.xcconfig"; path = "Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo.release.xcconfig"; sourceTree = "<group>"; };
+		A4702D29F80B2FFF43E442BE /* Pods_flowplayer_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flowplayer_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B700D19BB4C8B649156438A9 /* Pods_flowplayer_demo.framework in Frameworks */,
+				003911054B6692A389D75D58 /* Pods_flowplayer_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +52,7 @@
 				4F58699E231BAE01000885CA /* flowplayer-demo */,
 				4F58699D231BAE01000885CA /* Products */,
 				5BB8E0CBD0E24EF9027D09AD /* Pods */,
-				E64B35F4EA2A95D43F6506B7 /* Frameworks */,
+				D0C9A5543AFD74B1FDC2CB4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +77,18 @@
 		5BB8E0CBD0E24EF9027D09AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A51A4D8FAF464935A91DB98 /* Pods-flowplayer-demo.debug.xcconfig */,
-				2EAE252105B895FBEF81B731 /* Pods-flowplayer-demo.release.xcconfig */,
+				1A42B6CAF4B75EF62CCB0577 /* Pods-flowplayer-demo.debug.xcconfig */,
+				8EE86B45968EF83107E16208 /* Pods-flowplayer-demo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0C9A5543AFD74B1FDC2CB4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4702D29F80B2FFF43E442BE /* Pods_flowplayer_demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E18D5DF2272EACA6000D1A0A /* source */ = {
@@ -113,14 +121,6 @@
 			path = supporting;
 			sourceTree = "<group>";
 		};
-		E64B35F4EA2A95D43F6506B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				15CB4ADBD5D643D91072BDC0 /* Pods_flowplayer_demo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,11 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F5869AE231BAE03000885CA /* Build configuration list for PBXNativeTarget "flowplayer-demo" */;
 			buildPhases = (
-				8F4B5F4D56AB94F044D2ED82 /* [CP] Check Pods Manifest.lock */,
+				80649468E4EAC76B0733C642 /* [CP] Check Pods Manifest.lock */,
 				4F586998231BAE01000885CA /* Sources */,
 				4F586999231BAE01000885CA /* Frameworks */,
 				4F58699A231BAE01000885CA /* Resources */,
-				600C7BAD398B4DE0A95C34B2 /* [CP] Embed Pods Frameworks */,
+				6BABD8FAE5D7AC4FB237E64C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +190,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		600C7BAD398B4DE0A95C34B2 /* [CP] Embed Pods Frameworks */ = {
+		6BABD8FAE5D7AC4FB237E64C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,7 +207,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flowplayer-demo/Pods-flowplayer-demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F4B5F4D56AB94F044D2ED82 /* [CP] Check Pods Manifest.lock */ = {
+		80649468E4EAC76B0733C642 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,7 +387,7 @@
 		};
 		4F5869AF231BAE03000885CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A51A4D8FAF464935A91DB98 /* Pods-flowplayer-demo.debug.xcconfig */;
+			baseConfigurationReference = 1A42B6CAF4B75EF62CCB0577 /* Pods-flowplayer-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,7 +412,7 @@
 		};
 		4F5869B0231BAE03000885CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EAE252105B895FBEF81B731 /* Pods-flowplayer-demo.release.xcconfig */;
+			baseConfigurationReference = 8EE86B45968EF83107E16208 /* Pods-flowplayer-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
