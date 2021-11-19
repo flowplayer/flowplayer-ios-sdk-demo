@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let audioSession = AVAudioSession.sharedInstance()
 		
 		do {
+			// Required for audio & video playback on physical devices
 			try audioSession.setCategory(.playback, mode: .moviePlayback)
 		} catch {
 			print("Setting category to AVAudioSessionCategoryPlayback failed.")

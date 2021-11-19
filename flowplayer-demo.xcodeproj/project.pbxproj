@@ -67,9 +67,9 @@
 		4F58699E231BAE01000885CA /* flowplayer-demo */ = {
 			isa = PBXGroup;
 			children = (
-				E18D5DF4272EACB3000D1A0A /* supporting */,
-				E18D5DF3272EACAC000D1A0A /* storyboard */,
 				E18D5DF2272EACA6000D1A0A /* source */,
+				E18D5DF3272EACAC000D1A0A /* storyboard */,
+				E18D5DF4272EACB3000D1A0A /* supporting */,
 			);
 			path = "flowplayer-demo";
 			sourceTree = "<group>";

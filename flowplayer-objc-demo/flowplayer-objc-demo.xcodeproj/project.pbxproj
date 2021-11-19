@@ -81,9 +81,9 @@
 		4F193047234522CF009BEC88 /* flowplayer-objc-demo */ = {
 			isa = PBXGroup;
 			children = (
-				E1BAEB202746CB12000CCFF7 /* supporting */,
-				E1BAEB1F2746CB05000CCFF7 /* storyboard */,
 				E1BAEB1E2746CAF7000CCFF7 /* source */,
+				E1BAEB1F2746CB05000CCFF7 /* storyboard */,
+				E1BAEB202746CB12000CCFF7 /* supporting */,
 			);
 			path = "flowplayer-objc-demo";
 			sourceTree = "<group>";
